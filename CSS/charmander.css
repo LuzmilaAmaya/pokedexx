@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #c00000;
+  text-align: center;
+  padding: 10px;
+}
+
+.logo {
+  height: 50px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin: 30px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Caja de Charmander */
+.charmander-box {
+  flex: 1 1 300px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.charmander-box img {
+  width: 200px;
+  height: auto;
+}
+
+.title-box {
+  background-color: #2d6a4f;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+.descripcion {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Evoluciones */
+.evoluciones-box {
+  flex: 1 1 300px;
+  text-align: center;
+}
+
+.evoluciones-box h2 {
+  margin-bottom: 15px;
+}
+
+.evoluciones {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.evoluciones img {
+  width: 230px;
+  height: auto;
+}
+
+.evolucion p {
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .evoluciones {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .evoluciones {
+    flex-direction: column;
+    align-items: center;
+  }
+}
